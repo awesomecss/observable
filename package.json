@@ -3,9 +3,12 @@
   "public": true,
   "version": "0.0.1",
   "description": "🔍 Observable CSS rules.",
-  "main": "lib/index.js",
+  "source": "src/index.js",
+  "module": "dist/observable.es.js",
+  "main": "dist/observable.js",
+  "umd:main": "dist/observable.umd.js",
   "scripts": {
-    "bundle": "microbundle src/index.js",
+    "bundle": "microbundle",
     "build": "npm run lint && npm run bundle",
     "lint": "standard 'src/**/*.js' --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
