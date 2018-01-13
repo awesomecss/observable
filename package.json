@@ -1,0 +1,19 @@
+{
+  "name": "@awesomecss/observable",
+  "public": true,
+  "version": "0.0.1",
+  "description": "🔍 Observable CSS rules.",
+  "main": "lib/index.js",
+  "scripts": {
+    "bundle": "microbundle src/index.js",
+    "build": "npm run lint && npm run bundle",
+    "lint": "standard 'src/**/*.js' --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jon Quach <itsjonq@gmail.com> (https://jonquach.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "microbundle": "0.2.4",
+    "standard": "10.0.3"
+  }
+}
